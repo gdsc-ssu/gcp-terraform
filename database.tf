@@ -37,7 +37,7 @@ resource "google_sql_database" "postgres_db" {
 
 # 데이터베이스 사용자 생성
 resource "google_sql_user" "postgres_user" {
-  name     = "my_user"
+  name     = "" # TODO: 사용자 이름 입력
   instance = google_sql_database_instance.postgres_instance.name
-  password = "my_password1234!"
+  password = "" # TODO: 비밀번호 입력
 }
